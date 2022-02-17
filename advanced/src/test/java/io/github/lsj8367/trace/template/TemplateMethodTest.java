@@ -1,5 +1,8 @@
 package io.github.lsj8367.trace.template;
 
+import io.github.lsj8367.trace.template.code.AbstractTemplate;
+import io.github.lsj8367.trace.template.code.SubClassLogic1;
+import io.github.lsj8367.trace.template.code.SubClassLogic2;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
@@ -40,6 +43,26 @@ public class TemplateMethodTest {
         AbstractTemplate template1 = new SubClassLogic1();
         template1.execute();
         AbstractTemplate template2 = new SubClassLogic2();
+        template2.execute();
+    }
+
+    @Test
+    void templateMethodV2() {
+        AbstractTemplate template = new AbstractTemplate() {
+            @Override
+            protected void call() {
+                log.info("비즈니스 로직 1 실행");
+            }
+        };
+        template.execute();
+
+        AbstractTemplate template2 = new AbstractTemplate() {
+            @Override
+            protected void call() {
+                log.info("비즈니스 로직 1 실행");
+            }
+        };
+
         template2.execute();
     }
 }
