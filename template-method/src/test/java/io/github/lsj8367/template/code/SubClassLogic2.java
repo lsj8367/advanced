@@ -1,4 +1,4 @@
-package io.github.lsj8367.trace.template.code;
+package io.github.lsj8367.template.code;
 
 import lombok.extern.slf4j.Slf4j;
 

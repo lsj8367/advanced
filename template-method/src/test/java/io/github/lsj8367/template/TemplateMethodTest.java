@@ -1,8 +1,8 @@
-package io.github.lsj8367.trace.template;
+package io.github.lsj8367.template;
 
-import io.github.lsj8367.trace.template.code.AbstractTemplate;
-import io.github.lsj8367.trace.template.code.SubClassLogic1;
-import io.github.lsj8367.trace.template.code.SubClassLogic2;
+import io.github.lsj8367.template.code.SubClassLogic2;
+import io.github.lsj8367.template.code.AbstractTemplate;
+import io.github.lsj8367.template.code.SubClassLogic1;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
