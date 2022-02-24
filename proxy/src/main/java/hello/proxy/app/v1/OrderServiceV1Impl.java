@@ -1,4 +1,4 @@
-package hello.proxy.app;
+package hello.proxy.app.v1;
 
 public class OrderServiceV1Impl implements OrderServiceV1 {
 
