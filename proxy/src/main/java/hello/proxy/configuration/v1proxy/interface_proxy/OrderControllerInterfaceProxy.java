@@ -20,7 +20,6 @@ public class OrderControllerInterfaceProxy implements OrderControllerV1 {
             final String result = target.request(itemId);
             logTrace.end(status);
             return result;
-
         } catch (Exception e) {
             logTrace.exception(status, e);
             throw e;
